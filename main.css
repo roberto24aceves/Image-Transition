@@ -79,4 +79,7 @@ html,body{
         height: 200px;
         transition-timing-function: ease-out;
     }
+    .icon{
+        width: 45%;
+    }
 }
