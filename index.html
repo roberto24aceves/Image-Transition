@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen - Transition</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+</head>
+<body>
+
+    <div class="img-1 img"></div>
+    <div class="img-2 img"></div>
+    <div class="img-3 img"></div>
+    <div class="img-4 img"></div>
+    
+    <div class="icon">
+        <img src="icon.svg" alt="" srcset="">
+    </div>
+    
+    <!--
+    <div class="texto">
+        <span class="firstname">Roberto</span> <span class="lastname">Aceves</span>
+    </div>
+    -->
+    
+
+    <script>
+        const img1 = document.querySelector(".img-1");
+        const img2 = document.querySelector(".img-2");
+        const img3 = document.querySelector(".img-3");
+        const img4 = document.querySelector(".img-4");
+
+        document.addEventListener("mousemove", e=> {
+            img1.setAttribute(
+                "style","top :" + (e.pageY - 225) + "px; left :" + (e.pageX - 200) + "px"
+            );
+            img2.setAttribute(
+                "style","top :" + (e.pageY - 225) + "px; left :" + (e.pageX - 200) + "px"
+            );
+            img3.setAttribute(
+                "style","top :" + (e.pageY - 225) + "px; left :" + (e.pageX - 200) + "px"
+            );
+            img4.setAttribute(
+                "style","top :" + (e.pageY - 225) + "px; left :" + (e.pageX - 200) + "px"
+            );
+        })
+    </script>
+</body>
+</html>

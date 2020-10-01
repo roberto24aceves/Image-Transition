@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('fonts/MonumentExtended-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    overflow: hidden;
+    /*   Cambiar el cursor por una imagen
+    cursor: url(""), auto !important;
+    */
+}
+.icon{
+    width: 20%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.texto{
+    font-family: MonumentExtended;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.lastname{
+    color: #ef476f;
+}
+.lastname:hover{
+    color: #00b4d8;
+}
+.img{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    transition-timing-function: ease-out;
+}
+
+.img-1{
+    background-image: url('images/img-1.png');
+    background-size: cover;
+    transition-duration: 1000ms;
+}
+
+.img-2{
+    background-image: url('images/img-2.png');
+    background-size: cover;
+    transition-duration: 800ms;
+}
+
+.img-3{
+    background-image: url('images/img-3.png');
+    background-size: cover;
+    transition-duration: 600ms;
+}
+
+.img-4{
+    background-image: url('images/img-4.png');
+    background-size: cover;
+    transition-duration: 400ms;
+}
+
+@media (max-width: 700px){
+    .img{
+        position: absolute;
+        width: 150px;
+        height: 200px;
+        transition-timing-function: ease-out;
+    }
+}
